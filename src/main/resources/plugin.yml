@@ -1,0 +1,11 @@
+name: MeContacts
+version: '1.0.0'
+main: me.com.meContacts.MeContacts
+api-version: '1.21'
+load: STARTUP
+authors: [ metaforza ]
+commands:
+  info:
+    description: Работа с плагином
+    default: true
+    usage: "/info get <ник> - Для информации об игроке\n/info set <имя> <@тг> - Установить себе информацию"
