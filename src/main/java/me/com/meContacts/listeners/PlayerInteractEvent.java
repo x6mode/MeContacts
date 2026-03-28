@@ -16,6 +16,7 @@ public class PlayerInteractEvent implements Listener {
         Player player = event.getPlayer();
 
         if (!player.isSneaking()) return;
+        if (!ContactManager.isPlayerHasContacts(target.getPersistentDataContainer())) return;
 
         List<String> contacts = ContactManager.getContactByPlayer(
                 target.getPersistentDataContainer()
